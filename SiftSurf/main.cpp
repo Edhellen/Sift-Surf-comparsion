@@ -71,8 +71,6 @@ int surfMatching(Mat img1, Mat img2)
 	detector->detect(img1, keypoints_object);
 	detector->detect(img2, keypoints_scene);
 
-	//Ptr<SurfDescriptorExtractor> extractor = SurfDescriptorExtractor::create();
-
 	Mat descriptors_object, descriptors_scene;
 
 	detector->compute(img1, keypoints_object, descriptors_object);
@@ -446,7 +444,6 @@ void matchNoised(bool isSURF)
 	ofstream timeRes;
 
 
-	//Если сравниваем по SURF
 	if (isSURF)
 	{
 		matchesRes.open(resultsNoisedSURF);
@@ -542,7 +539,6 @@ void matchBlured(bool isSURF)
 	ofstream timeRes;
 
 
-	//Если сравниваем по SURF
 	if (isSURF)
 	{
 		matchesRes.open(resultsBluredSURF);
@@ -640,18 +636,18 @@ int main(int argc, char *argv[])
 {
 	cout << "It works! Finally" << endl;
 
-	//matchRotated(true);
-	//matchScaled(true);
+	matchRotated(true);
+	matchScaled(true);
 	matchPerspectived(true);
-	//matchNoised(true);
-	//matchBlured(true);
+	matchNoised(true);
+	matchBlured(true);
 	cout << "SURF matching completed" << endl;
 
-	//matchRotated(false);
-	//matchScaled(false);
+	matchRotated(false);
+	matchScaled(false);
 	matchPerspectived(false);
-	//matchNoised(false);
-	//matchBlured(false);
+	matchNoised(false);
+	matchBlured(false);
 	cout << "SIFT matching completed" << endl;
 	
 	cvWaitKey(0);
