@@ -1,7 +1,0 @@
-Picture: 1 Deviation: 0 Time: 22.8895 Matches: 903
-Picture: 1 Deviation: 20 Time: 8.69688 Matches: 572
-Picture: 1 Deviation: 40 Time: 19.303 Matches: 2839
-Picture: 1 Deviation: 60 Time: 10.1199 Matches: 2146
-Picture: 1 Deviation: 80 Time: 12.8024 Matches: 1059
-Picture: 1 Deviation: 100 Time: 12.5215 Matches: 737
-Picture: 1 Deviation: 120 Time: 8.85399 Matches: 783
